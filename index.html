@@ -13,6 +13,8 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* PCでは段落内の改行を無効化し、自然に流す（スマホのみ改行） */
+        @media (min-width: 640px) { .pc-flow br { display: none; } }
         body {
             font-family: "Shippori Mincho", "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "MS PMincho", serif;
         }
@@ -44,7 +46,7 @@
                 <h2 class="text-3xl sm:text-5xl font-bold text-stone-900 tracking-tight leading-tight">
                     車を動かさず<br><span class="text-amber-800 font-bold">極上の輝き</span>を手に入れる
                 </h2>
-                <p class="text-sm sm:text-base text-stone-700 leading-relaxed font-sans">
+                <p class="pc-flow text-sm sm:text-base text-stone-700 leading-relaxed font-sans">
                     「洗車に行く時間がない」<br>「子供の面倒で手が離せない」<br>そんなあなたへ。<br>ノイシュタルトが生駒市を拠点に、<br>ご自宅の駐車スペースまで伺い、<br>シミを残さない純水を使った<br>丁寧な手洗い洗車をお届けします。
                 </p>
             </div>
@@ -85,21 +87,21 @@
                             <span class="w-7 h-7 rounded-full bg-amber-200/60 text-amber-900 flex items-center justify-center text-sm font-bold shrink-0 font-sans">1</span>
                             <h5 class="font-bold text-base sm:text-lg text-stone-900">ご自宅の駐車スペースで完結</h5>
                         </div>
-                        <p class="text-sm text-stone-700 leading-relaxed font-sans">電源や水道をお借りするだけでOK。<br>店舗への持ち込みや待ち時間は一切不要です。</p>
+                        <p class="pc-flow text-sm text-stone-700 leading-relaxed font-sans">電源や水道をお借りするだけでOK。<br>店舗への持ち込みや待ち時間は一切不要です。</p>
                     </div>
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 sm:p-8 rounded-xl space-y-3 shadow-xs">
                         <div class="flex items-center space-x-3">
                             <span class="w-7 h-7 rounded-full bg-amber-200/60 text-amber-900 flex items-center justify-center text-sm font-bold shrink-0 font-sans">2</span>
                             <h5 class="font-bold text-base sm:text-lg text-stone-900">シミを残さない「純水」を使用</h5>
                         </div>
-                        <p class="text-sm text-stone-700 leading-relaxed font-sans">水道水に含まれるミネラル分を完全に除去した<br>純水洗車により、ボディに水ジミを残しません。</p>
+                        <p class="pc-flow text-sm text-stone-700 leading-relaxed font-sans">水道水に含まれるミネラル分を完全に除去した<br>純水洗車により、ボディに水ジミを残しません。</p>
                     </div>
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 sm:p-8 rounded-xl space-y-3 shadow-xs">
                         <div class="flex items-center space-x-3">
                             <span class="w-7 h-7 rounded-full bg-amber-200/60 text-amber-900 flex items-center justify-center text-sm font-bold shrink-0 font-sans">3</span>
                             <h5 class="font-bold text-base sm:text-lg text-stone-900">明確で分かりやすい料金体系</h5>
                         </div>
-                        <p class="text-sm text-stone-700 leading-relaxed font-sans">車種ごとの分かりやすい定額制。<br>事前の簡易シミュレーションで、<br>その場で納得の料金が分かります。</p>
+                        <p class="pc-flow text-sm text-stone-700 leading-relaxed font-sans">車種ごとの分かりやすい定額制。<br>事前の簡易シミュレーションで、<br>その場で納得の料金が分かります。</p>
                     </div>
                 </div>
             </section>
@@ -112,17 +114,17 @@
                     <div class="bg-[#FDFBF7] p-6 rounded-xl border border-amber-900/10 space-y-3 shadow-xs">
                         <span class="bg-stone-900 text-white font-bold px-2.5 py-1 rounded text-xs font-sans">STEP 1</span>
                         <p class="font-bold text-stone-900 text-base sm:text-lg">お見積り・ご予約</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">シミュレーターで料金を確認し、<br>InstagramのDMからご予約。<br>（公式LINEは準備中）</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">シミュレーターで料金を確認し、<br>InstagramのDMからご予約。<br>（公式LINEは準備中）</p>
                     </div>
                     <div class="bg-[#FDFBF7] p-6 rounded-xl border border-amber-900/10 space-y-3 shadow-xs">
                         <span class="bg-stone-900 text-white font-bold px-2.5 py-1 rounded text-xs font-sans">STEP 2</span>
                         <p class="font-bold text-stone-900 text-base sm:text-lg">ご自宅へ訪問</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">ご指定の日時にご自宅へお伺いします。<br>（お立会いは最初と最後のみでOK）</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">ご指定の日時にご自宅へお伺いします。<br>（お立会いは最初と最後のみでOK）</p>
                     </div>
                     <div class="bg-[#FDFBF7] p-6 rounded-xl border border-amber-900/10 space-y-3 shadow-xs">
                         <span class="bg-stone-900 text-white font-bold px-2.5 py-1 rounded text-xs font-sans">STEP 3</span>
                         <p class="font-bold text-stone-900 text-base sm:text-lg">施工・お支払い</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">丁寧に手洗い洗車を行い、<br>ご確認後に各種決済でお支払い。</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">丁寧に手洗い洗車を行い、<br>ご確認後に各種決済でお支払い。</p>
                     </div>
                 </div>
             </section>
@@ -133,7 +135,7 @@
                     <h3 class="text-xs sm:text-sm font-bold text-amber-800 tracking-widest uppercase font-sans">Simulator</h3>
                     <h4 class="text-xl sm:text-3xl font-bold text-stone-900 mt-1">料金シミュレーション</h4>
                     <p class="text-sm sm:text-base text-stone-600 font-sans mt-1">車種とオプションを選ぶだけでその場の金額が分かります</p>
-                    <p class="text-sm sm:text-base text-stone-600 font-sans mt-1">基本メニューは<br class="sm:hidden">「3pHシャンプー洗車＋純水すすぎ」です。<br>推定時間は基本メニューのみの目安で、<br>オプション追加で加算されます。</p>
+                    <p class="pc-flow text-sm sm:text-base text-stone-600 font-sans mt-1">基本メニューは<br class="sm:hidden">「3pHシャンプー洗車＋純水すすぎ」です。<br>推定時間は基本メニューのみの目安で、<br>オプション追加で加算されます。</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -263,14 +265,14 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 sm:p-8 rounded-xl space-y-3 shadow-xs">
                         <h5 class="font-bold text-base sm:text-lg text-stone-900">対応エリア</h5>
-                        <p class="text-sm text-stone-700 leading-relaxed font-sans">生駒市を拠点に、<span class="font-bold text-amber-800">片道1時間以内の範囲は出張費無料</span>です。<br>片道1時間を超える地域は、1時間ごとに＋1,000円を頂戴しております。<br>（※Googleマップの標準所要時間を基準に算出いたします）</p>
-                        <p class="text-sm text-stone-700 leading-relaxed font-sans">対象エリアの目安：<br>生駒市、奈良市、大和郡山市、<br>東大阪市、四條畷市、大東市、<br>門真市、守口市、寝屋川市、<br>枚方市、交野市、木津川市、<br>精華町、京田辺市 ほか</p>
+                        <p class="pc-flow text-sm text-stone-700 leading-relaxed font-sans">生駒市を拠点に、<span class="font-bold text-amber-800">片道1時間以内の範囲は出張費無料</span>です。<br>片道1時間を超える地域は、1時間ごとに＋1,000円を頂戴しております。<br>（※Googleマップの標準所要時間を基準に算出いたします）</p>
+                        <p class="pc-flow text-sm text-stone-700 leading-relaxed font-sans">対象エリアの目安：<br>生駒市、奈良市、大和郡山市、<br>東大阪市、四條畷市、大東市、<br>門真市、守口市、寝屋川市、<br>枚方市、交野市、木津川市、<br>精華町、京田辺市 ほか</p>
                         <p class="text-sm text-stone-700 leading-relaxed font-sans">エリア外でも対応できる場合がございます。お気軽にご相談ください。</p>
                     </div>
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 sm:p-8 rounded-xl space-y-3 shadow-xs">
                         <h5 class="font-bold text-base sm:text-lg text-stone-900">営業時間・定休日</h5>
                         <p class="text-sm text-stone-700 leading-relaxed font-sans">営業時間：<span class="font-bold text-amber-800">8:00〜20:00</span></p>
-                        <p class="text-sm text-stone-700 leading-relaxed font-sans">早朝・夜間の施工もご相談に応じます。<br>「平日は仕事で不在」<br>「休日の午前中に終わらせたい」<br>といったご希望もお気軽にお伝えください。</p>
+                        <p class="pc-flow text-sm text-stone-700 leading-relaxed font-sans">早朝・夜間の施工もご相談に応じます。<br>「平日は仕事で不在」<br>「休日の午前中に終わらせたい」<br>といったご希望もお気軽にお伝えください。</p>
                         <p class="text-sm text-stone-700 leading-relaxed font-sans">定休日：<span class="font-bold text-amber-800">不定休</span>（ご予約に応じて柔軟に対応いたします）</p>
                     </div>
                 </div>
@@ -286,37 +288,37 @@
                     
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 rounded-xl space-y-2 shadow-xs">
                         <p class="font-bold text-base sm:text-lg text-stone-900">Q. 出張費や交通費はかかりますか？</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">A. 生駒市を拠点に、片道1時間以内の範囲は<span class="font-bold text-amber-800">出張費無料</span>です。<br>片道1時間超の地域は1時間ごとに＋1,000円を頂戴しております。<br>（※Googleマップの標準所要時間を基準に算出いたします）</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">A. 生駒市を拠点に、片道1時間以内の範囲は<span class="font-bold text-amber-800">出張費無料</span>です。<br>片道1時間超の地域は1時間ごとに＋1,000円を頂戴しております。<br>（※Googleマップの標準所要時間を基準に算出いたします）</p>
                     </div>
 
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 rounded-xl space-y-2 shadow-xs">
                         <p class="font-bold text-base sm:text-lg text-stone-900">Q. 雨の日の施工やキャンセルはどうなりますか？</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">A. 実は雨の日は、<br>「空気中のホコリが舞いにくい」<br>「ボディの汚れがふやけて落ちやすい」<br>といったメリットもございます。<br>ただし悪天候が予想される場合、<br>前日までにご連絡いただければ<br><span class="font-bold text-amber-800">キャンセル・日程変更は無料</span>ですのでご安心ください。</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">A. 実は雨の日は、<br>「空気中のホコリが舞いにくい」<br>「ボディの汚れがふやけて落ちやすい」<br>といったメリットもございます。<br>ただし悪天候が予想される場合、<br>前日までにご連絡いただければ<br><span class="font-bold text-amber-800">キャンセル・日程変更は無料</span>ですのでご安心ください。</p>
                     </div>
 
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 rounded-xl space-y-2 shadow-xs">
                         <p class="font-bold text-base sm:text-lg text-stone-900">Q. 水道や電気の準備は必要ですか？</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">A. 一般的な家庭用水道（蛇口）と<br>電源（100Vコンセント）をお借りできれば、<br>それ以外の専用器具や純水器等は<br>すべてこちらで持参いたします。</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">A. 一般的な家庭用水道（蛇口）と<br>電源（100Vコンセント）をお借りできれば、<br>それ以外の専用器具や純水器等は<br>すべてこちらで持参いたします。</p>
                     </div>
 
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 rounded-xl space-y-2 shadow-xs">
                         <p class="font-bold text-base sm:text-lg text-stone-900">Q. 洗車中の排水や水しぶきが心配です。</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">A. 周囲へ極力水が飛び散らないよう配慮して作業を行っております。<br>また、使用する洗剤は環境に配慮したものを使用しておりますが、<br>大量の排水が流れる場所については事前に確認させていただきます。</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">A. 周囲へ極力水が飛び散らないよう配慮して作業を行っております。<br>また、使用する洗剤は環境に配慮したものを使用しておりますが、<br>大量の排水が流れる場所については事前に確認させていただきます。</p>
                     </div>
 
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 rounded-xl space-y-2 shadow-xs">
                         <p class="font-bold text-base sm:text-lg text-stone-900">Q. 洗車中の騒音はうるさいですか？</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">A. 基本は手洗い中心の作業となりますので、<br>大きなエンジン音や騒音を発し続けることはございません。<br>早朝や夜間を除けば、<br>ご近所のご迷惑になるような音はほぼありませんので<br>ご安心ください。</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">A. 基本は手洗い中心の作業となりますので、<br>大きなエンジン音や騒音を発し続けることはございません。<br>早朝や夜間を除けば、<br>ご近所のご迷惑になるような音はほぼありませんので<br>ご安心ください。</p>
                     </div>
 
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 rounded-xl space-y-2 shadow-xs">
                         <p class="font-bold text-base sm:text-lg text-stone-900">Q. 駐車スペースはどれくらい必要ですか？</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">A. お車の左右どちらかと前後どちらかに、<br>大人が歩いて作業できるスペース<br>（50cm〜1m程度）があれば施工可能です。</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">A. お車の左右どちらかと前後どちらかに、<br>大人が歩いて作業できるスペース<br>（50cm〜1m程度）があれば施工可能です。</p>
                     </div>
 
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 rounded-xl space-y-2 shadow-xs">
                         <p class="font-bold text-base sm:text-lg text-stone-900">Q. 洗車中に外出しても大丈夫ですか？</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">A. 最初のお車確認と、<br>最後の仕上がりチェック時のみ<br>お立会いをお願いしております。<br>施工中の時間はご自宅で自由にお過ごしいただけます。</p>
+                        <p class="pc-flow text-stone-700 leading-relaxed font-sans">A. 最初のお車確認と、<br>最後の仕上がりチェック時のみ<br>お立会いをお願いしております。<br>施工中の時間はご自宅で自由にお過ごしいただけます。</p>
                     </div>
 
                     <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 rounded-xl space-y-2 shadow-xs">
@@ -331,7 +333,7 @@
             <section id="contact" class="bg-[#F7F4EB] border border-amber-900/10 rounded-2xl p-8 sm:p-12 text-center space-y-6 shadow-xs pt-4">
                 <h3 class="text-xs sm:text-sm font-bold text-amber-800 tracking-widest uppercase font-sans">Contact</h3>
                 <h4 class="text-2xl sm:text-4xl font-bold text-stone-900">ご予約・お問い合わせ</h4>
-                <p class="text-sm sm:text-lg text-stone-700 max-w-2xl mx-auto leading-relaxed font-sans">
+                <p class="pc-flow text-sm sm:text-lg text-stone-700 max-w-2xl mx-auto leading-relaxed font-sans">
                     ご質問やご予約は、InstagramのDMよりお気軽にご連絡ください。<br>公式LINE・お電話での受付は開業にあわせて準備中です。
                 </p>
                 <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
