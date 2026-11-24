@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>出張手洗い洗車 | neu start（ノイシュタルト）生駒</title>
+    <meta name="description" content="生駒市を拠点に出張する手洗い洗車サービス「neu start（ノイシュタルト）」。ご自宅の駐車スペースで、シミを残さない純水洗車。車種ごとの定額料金で、料金シミュレーションもその場で確認できます。片道1時間以内の出張費は無料。">
+    <meta property="og:title" content="出張手洗い洗車 | neu start（ノイシュタルト）生駒">
+    <meta property="og:description" content="ご自宅の駐車スペースで完結する出張手洗い洗車。純水使用・車種ごとの定額料金。生駒市拠点、片道1時間以内の出張費無料。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.jpg">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -57,6 +62,7 @@
                 <a href="#features" class="hover:text-amber-800 transition underline underline-offset-4">選ばれる3つの理由</a>
                 <a href="#flow" class="hover:text-amber-800 transition underline underline-offset-4">ご利用の流れ</a>
                 <a href="#simulator" class="hover:text-amber-800 transition underline underline-offset-4">料金シミュレーション</a>
+                <a href="#area" class="hover:text-amber-800 transition underline underline-offset-4">対応エリア・営業時間</a>
                 <a href="#faq" class="hover:text-amber-800 transition underline underline-offset-4">よくあるご質問</a>
                 <a href="#contact" class="hover:text-amber-800 transition underline underline-offset-4">ご予約・お問合せ</a>
             </div>
@@ -104,7 +110,7 @@
                     <div class="bg-[#FDFBF7] p-6 rounded-xl border border-amber-900/10 space-y-3 shadow-xs">
                         <span class="bg-stone-900 text-white font-bold px-2.5 py-1 rounded text-xs font-sans">STEP 1</span>
                         <p class="font-bold text-stone-900 text-base sm:text-lg">お見積り・ご予約</p>
-                        <p class="text-stone-700 leading-relaxed font-sans">シミュレーターで料金を確認し、公式LINEまたはお問い合わせからご予約。</p>
+                        <p class="text-stone-700 leading-relaxed font-sans">シミュレーターで料金を確認し、InstagramのDMからご予約。（公式LINEは準備中）</p>
                     </div>
                     <div class="bg-[#FDFBF7] p-6 rounded-xl border border-amber-900/10 space-y-3 shadow-xs">
                         <span class="bg-stone-900 text-white font-bold px-2.5 py-1 rounded text-xs font-sans">STEP 2</span>
@@ -135,7 +141,7 @@
                             <div class="space-y-3.5" id="car-classes">
                                 <label class="flex items-center justify-between p-4.5 rounded-xl border border-amber-900/10 bg-[#FDFBF7] cursor-pointer hover:border-amber-600 transition shadow-xs">
                                     <div class="flex items-center space-x-4">
-                                        <input type="radio" name="carClass" value="2000" data-name="Sクラス（軽自動車）" class="text-amber-700 focus:ring-amber-500 h-5 w-5" checked>
+                                        <input type="radio" name="carClass" value="2000" data-time="45" data-name="Sクラス（軽自動車）" class="text-amber-700 focus:ring-amber-500 h-5 w-5" checked>
                                         <div>
                                             <p class="font-medium text-base sm:text-lg text-stone-900">Sクラス：軽自動車</p>
                                             <p class="text-xs sm:text-sm text-stone-600 font-sans">N-BOX、ハスラー、アルト 等</p>
@@ -146,7 +152,7 @@
 
                                 <label class="flex items-center justify-between p-4.5 rounded-xl border border-amber-900/10 bg-[#FDFBF7] cursor-pointer hover:border-amber-600 transition shadow-xs">
                                     <div class="flex items-center space-x-4">
-                                        <input type="radio" name="carClass" value="3000" data-name="Mクラス（コンパクト・小型セダン）" class="text-amber-700 focus:ring-amber-500 h-5 w-5">
+                                        <input type="radio" name="carClass" value="3000" data-time="60" data-name="Mクラス（コンパクト・小型セダン）" class="text-amber-700 focus:ring-amber-500 h-5 w-5">
                                         <div>
                                             <p class="font-medium text-base sm:text-lg text-stone-900">Mクラス：コンパクト</p>
                                             <p class="text-xs sm:text-sm text-stone-600 font-sans">アクア、プリウス、フィット 等</p>
@@ -157,7 +163,7 @@
 
                                 <label class="flex items-center justify-between p-4.5 rounded-xl border border-amber-900/10 bg-[#FDFBF7] cursor-pointer hover:border-amber-600 transition shadow-xs">
                                     <div class="flex items-center space-x-4">
-                                        <input type="radio" name="carClass" value="4000" data-name="Lクラス（SUV・ミドルワゴン）" class="text-amber-700 focus:ring-amber-500 h-5 w-5">
+                                        <input type="radio" name="carClass" value="4000" data-time="75" data-name="Lクラス（SUV・ミドルワゴン）" class="text-amber-700 focus:ring-amber-500 h-5 w-5">
                                         <div>
                                             <p class="font-medium text-base sm:text-lg text-stone-900">Lクラス：SUV・ワゴン</p>
                                             <p class="text-xs sm:text-sm text-stone-600 font-sans">RAV4、ハリアー 等</p>
@@ -168,7 +174,7 @@
 
                                 <label class="flex items-center justify-between p-4.5 rounded-xl border border-amber-900/10 bg-[#FDFBF7] cursor-pointer hover:border-amber-600 transition shadow-xs">
                                     <div class="flex items-center space-x-4">
-                                        <input type="radio" name="carClass" value="5000" data-name="LLクラス（大型SUV・大型ミニバン）" class="text-amber-700 focus:ring-amber-500 h-5 w-5">
+                                        <input type="radio" name="carClass" value="5000" data-time="90" data-name="LLクラス（大型SUV・大型ミニバン）" class="text-amber-700 focus:ring-amber-500 h-5 w-5">
                                         <div>
                                             <p class="font-medium text-base sm:text-lg text-stone-900">LLクラス：大型SUV等</p>
                                             <p class="text-xs sm:text-sm text-stone-600 font-sans">アルファード、ランクル 等</p>
@@ -245,6 +251,28 @@
                 </div>
             </section>
 
+            <!-- 対応エリア・営業時間 -->
+            <section id="area" class="space-y-6 pt-4">
+                <div class="text-center">
+                    <h3 class="text-xs sm:text-sm font-bold text-amber-800 tracking-widest uppercase font-sans">Area &amp; Hours</h3>
+                    <h4 class="text-xl sm:text-3xl font-bold text-stone-900 mt-1">対応エリアと営業時間</h4>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 sm:p-8 rounded-xl space-y-3 shadow-xs">
+                        <h5 class="font-bold text-base sm:text-lg text-stone-900">対応エリア</h5>
+                        <p class="text-sm text-stone-700 leading-relaxed font-sans">生駒市を拠点に、<span class="font-bold text-amber-800">片道1時間以内の範囲は出張費無料</span>です。片道1時間を超える地域は、1時間ごとに＋1,000円を頂戴しております。（※Googleマップの標準所要時間を基準に算出いたします）</p>
+                        <p class="text-sm text-stone-700 leading-relaxed font-sans">対象エリアの目安：生駒市、奈良市、大和郡山市、東大阪市、四條畷市、大東市、門真市、守口市、寝屋川市、枚方市、交野市、木津川市、精華町、京田辺市 ほか</p>
+                        <p class="text-sm text-stone-700 leading-relaxed font-sans">エリア外でも対応できる場合がございます。お気軽にご相談ください。</p>
+                    </div>
+                    <div class="bg-[#F7F4EB] border border-amber-900/10 p-6 sm:p-8 rounded-xl space-y-3 shadow-xs">
+                        <h5 class="font-bold text-base sm:text-lg text-stone-900">営業時間・定休日</h5>
+                        <p class="text-sm text-stone-700 leading-relaxed font-sans">営業時間：<span class="font-bold text-amber-800">8:00〜20:00</span></p>
+                        <p class="text-sm text-stone-700 leading-relaxed font-sans">早朝・夜間の施工もご相談に応じます。「平日は仕事で不在」「休日の午前中に終わらせたい」といったご希望もお気軽にお伝えください。</p>
+                        <p class="text-sm text-stone-700 leading-relaxed font-sans">定休日：<span class="font-bold text-amber-800">不定休</span>（ご予約に応じて柔軟に対応いたします）</p>
+                    </div>
+                </div>
+            </section>
+
             <!-- よくある質問 (FAQ) -->
             <section id="faq" class="space-y-6 pt-4">
                 <div class="text-center">
@@ -301,19 +329,19 @@
                 <h3 class="text-xs sm:text-sm font-bold text-amber-800 tracking-widest uppercase font-sans">Contact</h3>
                 <h4 class="text-2xl sm:text-4xl font-bold text-stone-900">ご予約・お問い合わせ</h4>
                 <p class="text-sm sm:text-lg text-stone-700 max-w-2xl mx-auto leading-relaxed font-sans">
-                    ご質問やご予約は公式LINEまたはお電話よりお気軽にご連絡ください。
+                    ご質問やご予約は、InstagramのDMよりお気軽にご連絡ください。公式LINE・お電話での受付は開業にあわせて準備中です。
                 </p>
                 <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://line.me" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-10 py-4 rounded-xl shadow-sm transition text-base flex items-center justify-center space-x-2 font-sans">
-                        <span>LINEで簡単予約・相談</span>
-                    </a>
                     <!-- インスタグラムリンク -->
                     <a href="https://instagram.com/neustart_mobilecarwash" target="_blank" class="bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-90 text-white font-bold px-10 py-4 rounded-xl shadow-sm transition text-base flex items-center justify-center space-x-2 font-sans">
-                        <span>Instagramを見る</span>
+                        <span>Instagramで予約・相談（DM）</span>
                     </a>
-                    <a href="tel:0000000000" class="bg-[#ECE6DC] hover:bg-[#E2DACF] text-stone-800 font-bold px-10 py-4 rounded-xl transition text-base flex items-center justify-center space-x-2 font-sans">
-                        <span>お電話でのお問い合わせ</span>
-                    </a>
+                    <span class="bg-emerald-600/40 text-white font-bold px-10 py-4 rounded-xl text-base flex items-center justify-center space-x-2 font-sans cursor-not-allowed">
+                        <span>公式LINE（準備中）</span>
+                    </span>
+                    <span class="bg-[#ECE6DC] text-stone-500 font-bold px-10 py-4 rounded-xl text-base flex items-center justify-center space-x-2 font-sans cursor-not-allowed">
+                        <span>お電話でのお問い合わせ（開業時に公開）</span>
+                    </span>
                 </div>
             </section>
 
@@ -325,6 +353,7 @@
                 <img src="logo.jpg" alt="Neu Start" class="h-10 w-auto object-contain opacity-90">
             </div>
             <p class="font-sans">生駒を拠点に幅広く出張対応いたします</p>
+            <p class="font-sans">営業時間 8:00〜20:00（早朝・夜間もご相談可）／定休日 不定休</p>
             <p class="font-sans">&copy; 2026 neu start All Rights Reserved.</p>
         </footer>
 
@@ -355,13 +384,14 @@
 
         function calculateTotal() {
             let basePrice = 0;
+            let baseTime = 45;
             carClassRadios.forEach(radio => {
                 if (radio.checked) {
                     basePrice = parseInt(radio.value);
+                    baseTime = parseInt(radio.dataset.time || 45);
                 }
             });
 
-            let baseTime = 45; 
             let optionsPrice = 0;
             let optionsTime = 0;
 
